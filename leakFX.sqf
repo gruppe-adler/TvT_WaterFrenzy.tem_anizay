@@ -18,7 +18,7 @@ params ["_vehicle", "_position", "_crater"];
     private _maxHeight = abs ((_p2 select 2) - (_p1 select 2));
     private _offsetZ = _offset select 2; // might be -1.5, we need some 
     private _normalizedOffset = _maxHeight/2 + _offsetZ;
-    private _heightInModel = _normalizedOffset/_maxHeight;
+    private _heightInModel = _normalizedOffset/_maxHeight + 0.2; // add some offset
 
     systemChat ("offset: " + str _normalizedOffset);
     systemChat ("heightInModel: " + str _heightInModel);
