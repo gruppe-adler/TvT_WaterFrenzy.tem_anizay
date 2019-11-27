@@ -8,7 +8,7 @@ class EditorData
 	toggles=2;
 	class ItemIDProvider
 	{
-		nextID=2102;
+		nextID=2109;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=5;
+		nextID=6;
 	};
 	class Camera
 	{
-		pos[]={3487.051,161.99272,3947.3179};
-		dir[]={0.47486997,-0.59096199,0.65230042};
-		up[]={0.34785059,0.80663222,0.47781822};
-		aside[]={0.80853641,3.6958954e-007,-0.58860523};
+		pos[]={3469.8567,171.11725,3935.0234};
+		dir[]={0.70719427,-0.31323504,0.63402939};
+		up[]={0.23332052,0.94961709,0.20917919};
+		aside[]={0.66760606,7.5378921e-007,-0.74464065};
 	};
 };
 binarizationWanted=0;
@@ -53370,7 +53370,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="call{[this, battlebus] call BIS_fnc_attachToRelative; [this] execVM ""detectHit.sqf"";}";
+				init="call{[this, battlebus] call BIS_fnc_attachToRelative; [this] call GRAD_leakage_fnc_registerHit;}";
 			};
 			id=1999;
 			type="Land_Tank_rust_F";
@@ -53428,7 +53428,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={3592.6477,168.99736,2908.9294};
-				angles[]={-0,0,6.215291};
+				angles[]={0,0,6.215291};
 			};
 			side="Empty";
 			flags=4;

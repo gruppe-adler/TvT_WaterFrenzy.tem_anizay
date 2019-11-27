@@ -1,0 +1,12 @@
+enableDebugConsole = 1;
+
+class CfgFunctions
+{
+    #include "grad-leakage\cfgFunctions.hpp"
+};
+
+
+class CfgSounds 
+{
+    #include "grad-leakage\cfgSounds.hpp"
+};
